@@ -1,0 +1,1 @@
+default_app_confing = 'apps.orders.apps.OrdersConfig'

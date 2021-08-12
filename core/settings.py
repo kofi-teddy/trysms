@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+from decouple import config
 
 from pathlib import Path
 
@@ -33,6 +34,16 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # Custom apps
     'apps.contacts',
+    'apps.users',
+    'apps.codes',
+    'apps.buyers',
+    'apps.cars',
+    'apps.sales',
+    'apps.orders',
+
+
+    # Third party apps
+    'crispy_forms', 
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +52,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+# Crispy forms default template settings
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Default Logiin
+LOGIN_URL = '/login/'
+
+
+# Custom user model
+AUTH_USER_MODEL = 'users.CustomUser'
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -57,7 +80,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,3 +149,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

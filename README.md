@@ -4,3 +4,9 @@
 - Python
 - Django
 - Twilio
+
+### Task
+#### Two Factor Authentications
+- Custom User Model
+- Twilio SMS
+- signals
