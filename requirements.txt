@@ -7,6 +7,11 @@ certifi==2021.5.30; python_version >= "3.0" and python_full_version < "3.0.0" or
 charset-normalizer==2.0.4; python_full_version >= "3.6.0" and python_version >= "3.0" \
     --hash=sha256:f23667ebe1084be45f6ae0538e4a5a865206544097e4e8bbcacf42cd02a348f3 \
     --hash=sha256:0c8911edd15d19223366a194a513099a302055a962bca2cec0f54b8b63175d8b
+django-crispy-forms==1.12.0; python_version >= "3.6" \
+    --hash=sha256:d196db62ee8b4fc32d1f9583d0e4be1bb17328b662682c1ecb9fb77bbc0fcf77 \
+    --hash=sha256:a3320356c84d0cdc631e1ec7b8908aa0117bc2a5f0ab1d053d33eba08f584808
+django-decouple==2.1 \
+    --hash=sha256:a7f4b4d1eaedde3a7d1a8e0489dae4afa96cff3eb575d569d92d9ba5f4283f90
 django==3.2.6; python_version >= "3.6" \
     --hash=sha256:7f92413529aa0e291f3be78ab19be31aefb1e1c9a52cd59e130f505f27a51f13 \
     --hash=sha256:f27f8544c9d4c383bbe007c57e3235918e258364577373d4920e9162837be022

@@ -43,7 +43,10 @@ INSTALLED_APPS = [
 
 
     # Third party apps
-    'crispy_forms', 
+    'crispy_forms',
+    'decouple',
+
+
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -151,3 +154,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+account_sid = config('TWILIO_ACCOUNT_SID')
+auth_token = config('TWILIO_AUTH_TOKEN')
+twilio_number = config('TWILIO_NUMBER')
+phone_number = config('PHONE_NUMBER')
