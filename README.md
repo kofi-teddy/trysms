@@ -6,7 +6,7 @@
 - Twilio
 
 ### Task
-#### Two Factor Authentications
+-Two Factor Authentications
 - Custom User Model
 - Twilio SMS
 - signals
