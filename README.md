@@ -10,3 +10,4 @@
 - Custom User Model
 - Twilio SMS
 - signals
+- testing with pytest
