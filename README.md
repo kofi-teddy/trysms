@@ -9,5 +9,5 @@
 - Two Factor Authentications
 - Custom User Model
 - Twilio SMS
-- signals
-- testing with pytest
+- Signals
+- Testing with pytest
