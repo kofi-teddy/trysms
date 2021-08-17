@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.cars',
     'apps.sales',
     'apps.orders',
+    'apps.products',
 
 
     # Third party apps
